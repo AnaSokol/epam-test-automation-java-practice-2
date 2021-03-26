@@ -2,14 +2,20 @@ package com.epam.test.automation.java.practice2;
 
 public class Main {
 
-    /**
-     * <summary>
-     * Implement code according to description of task 1.
-     * </summary>
-     */
-    public static int task1(int value) {
-        //TODO: Delete line below and write your own solution;
+    public static int task1(int n) {
+       if (n<=0) {
         throw new UnsupportedOperationException();
+       } 
+       int oddSum = 0;
+       while (n > 0)
+        {
+        	int rem = n % 10;
+            if (rem % 2 != 0) {
+             oddSum+= rem;
+            }
+            n = n / 10;
+        }
+		return oddSum;
     }
 
     /**
