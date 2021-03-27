@@ -47,7 +47,7 @@ public class Main {
         if (n == 1 || n == 2) {
             return 1;
         }
-        return fibRecursive (n; n - 1) + fibRecursive (n; n - 2);
+        return fibRecursive (n - 1) + fibRecursive (n - 2);
     }
     
     private static int sumFib (int n) {
