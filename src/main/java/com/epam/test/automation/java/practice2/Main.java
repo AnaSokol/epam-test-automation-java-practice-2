@@ -34,7 +34,27 @@ public class Main {
 
     
     public static int task3(int value) {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
+       if (value <= 0) {
+          throw new IllegalArgumentException();
+       }
+       return sumFib (value);
+    }
+    
+    private static int fibRecursive (int n) {
+        if (n == 0) {
+            return 0;
+        }
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        return fibRecursive (n; n - 1) + fibRecursive (n; n - 2);
+    }
+    
+    private static int sumFib (int n) {
+       int sum = 0;
+       for (int i = 0; i < n; i++) {
+           sum += fibRecursive (i);
+       }
+       return sum;
     }
 }
