@@ -18,41 +18,18 @@ public class Main {
 		return oddSum;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task 2.
-     * </summary>
-     */
+   
     public static int task2(int num) {
-       if (num<=0) 
-       {
-        throw new IllegalArgumentException();
+       if (num<=0) {
+          throw new IllegalArgumentException();
        } 
-       for(int num)
-       { 
-           char[] binaryArr = convertNumberToBinary(num);
-           int result = getCountOfCharInArray(binaryArr,'1');
-        } 
+       int count = 0;
+       while (num>0) {
+           count += num &1;
+           num >>= 1;
+       }
+       return count
     }
-    public static int getCountOfCharInArray(char[] number, char 1)
-    {
-        int count=0;
-        for(int i=0;i<number.length;i++)
-        {
-            if(number[i]==1)
-            {
-             count+=1; //add 1 to the count
-            }
-        }
-        return count;
-    }
-    public static char[] convertNumberToBinary(num)
-    {
-      String binaryNum = Integer.toBinaryString(num);
-      char[] binaryCharArray = binaryNum.toCharArray();
-      return binaryCharArray;
-    }
-    
 
     /**
      * <summary>
