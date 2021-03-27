@@ -18,26 +18,23 @@ public class Main {
     }
 
    
-    // public static int task2(int num) {
-    //   if (num<=0) {
-    //       throw new IllegalArgumentException();
-    //   } 
-    //   int count = 0;
-    //   while (num > 0) {
-    //       if ((num & 1) == 1) {
-    //           count ++; 
-    //       }
-    //       num >>= 1;
-    //   }
-    //   return count;
-    // }
+    public static int task2(int num) {
+      if (num<=0) {
+          throw new IllegalArgumentException();
+      } 
+      int count = 0;
+      while (num != 0) {
+          if ((num & 1) == 1) {
+              count ++; 
+          }
+          num >>= 1;
+      }
+      return count;
+    }
+
+    
+    public static int task3(int value) {
+        //TODO: Delete line below and write your own solution;
+        throw new UnsupportedOperationException();
+    }
 }
-    // /**
-    //  * <summary>
-    //  * Implement code according to description of task 3.
-    //  * </summary>
-    //  */
-    // public static int task3(int value) {
-    //     //TODO: Delete line below and write your own solution;
-    //     throw new UnsupportedOperationException();
-    // }
