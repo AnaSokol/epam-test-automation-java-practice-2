@@ -7,8 +7,7 @@ public class Main {
         throw new IllegalArgumentException();
        } 
        int oddSum = 0;
-       while (n > 0)
-        {
+       while (n > 0) {
         	int rem = n % 10;
             if (rem % 2 != 0) {
              oddSum+= rem;
@@ -24,20 +23,22 @@ public class Main {
           throw new IllegalArgumentException();
        } 
        int count = 0;
-       while (num>0) {
-           count += num &1;
+       while (num > 0) {
+           if ((num & 1) == 1) {
+              count ++; 
+           }
            num >>= 1;
        }
-       return count
+       return count;
     }
 
-    /**
-     * <summary>
-     * Implement code according to description of task 3.
-     * </summary>
-     */
-    public static int task3(int value) {
-        //TODO: Delete line below and write your own solution;
-        throw new UnsupportedOperationException();
-    }
+    // /**
+    //  * <summary>
+    //  * Implement code according to description of task 3.
+    //  * </summary>
+    //  */
+    // public static int task3(int value) {
+    //     //TODO: Delete line below and write your own solution;
+    //     throw new UnsupportedOperationException();
+    // }
 }
